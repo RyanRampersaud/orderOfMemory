@@ -113,26 +113,29 @@ textarea {
  background-color: #bfbfbf;
 }
 
-#clearing{
-    clear:both;
+.div-wrap{
+    position: relative;
+    height: 800px;
+    widows: 600px;
+    margin-top: 510px;
+    margin-right: 40px;
 }
-
 .gametext{
     height: 100px;
     width: 600px;
     background: url(../img/instruct.jpg);
     text-align: center;
     vertical-align: middle;
-    position: absolute;
     overflow: hidden;
-    margin-left: 185px;
-    margin-top: 530px;
+    margin: auto;
     line-height: 100px;
     color: white;
-
 }
-.instruction{
 
+.instruction{
+margin-left: 100px;
+margin-right: 100px;
+position: relative;
 }
 
 @media (min-width: 600px){
