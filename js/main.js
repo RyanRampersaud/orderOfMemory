@@ -36,9 +36,11 @@
 	        $('.gametext').text('If the display is 1, press the button in the first position.');
 	        
 	        $('.btnOne').click(function(){
-	        	roundNum=1;
-	        	console.log(roundNum);
+	        	roundNum++;
+	        	console.log('ygygy', roundNum);
 	        });
+
+	        console.log("yeas", roundNum);
 	    }
 
 	    else if (screenNum[0]==2) {
@@ -51,11 +53,14 @@
 
 	    else if(screenNum[0]==4) {
 	        $('.gametext').text('If the display is 4, press the button in the fourth position.');
-	    };
-	};
+	    }
 
+
+
+	}
+			
 	//Check if its round 2 and update
-		if (roundNum==1){
+	if (roundNum == 1) {
 	    $('.screen').text(screenNum[roundNum]);
 	    row++;
 	    $('.btnOne').text(buttonSeq[row][colu]);
@@ -68,17 +73,17 @@
 
 	    if (screenNum[1]==1) {
 	        $('.gametext').text('If the display is 1, press the button labeled "4".');
-	    };
+	    }
 
-	    if (screenNum[1]==2) {
+	    else if (screenNum[1]==2) {
 	        $('.gametext').text('If the display is 2, press the button in the same position as you pressed in stage 1.');
-	    };
+	    }
 
-	    if (screenNum[1]==3) {
+	    else if (screenNum[1]==3) {
 	        $('.gametext').text('If the display is 3, press the button in the first position.');
-	    };
+	    }
 
-	    if (screenNum[1]==4) {
+	    else if (screenNum[1]==4) {
 	        $('.gametext').text('If the display is 4, press the button in the same position as you pressed in stage 1.');
 	    };
 	}
