@@ -55,9 +55,7 @@
 	        $('.gametext').text('If the display is 4, press the button in the fourth position.');
 	    }
 
-
-
-	}
+	};
 			
 	//Check if its round 2 and update
 	if (roundNum == 1) {
@@ -85,8 +83,9 @@
 
 	    else if (screenNum[1]==4) {
 	        $('.gametext').text('If the display is 4, press the button in the same position as you pressed in stage 1.');
-	    };
+	    }
 	}
+
 	//Check if its round 3 and update
 	if (roundNum==2){
 	    $('.screen').text(screenNum[roundNum]);
